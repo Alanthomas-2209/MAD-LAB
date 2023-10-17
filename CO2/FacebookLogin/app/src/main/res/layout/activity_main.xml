@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logo_image"
         android:layout_marginTop="40dp"
-        android:hint="username"
+        android:hint="Username"
         android:padding="12dp" />
 
     <EditText
