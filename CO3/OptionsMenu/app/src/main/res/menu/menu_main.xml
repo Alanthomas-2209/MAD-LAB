@@ -1,0 +1,17 @@
+<!-- res/menu/menu_main.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_item1"
+        android:title="Item 1"
+        android:icon="@drawable/img"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_item2"
+        android:title="Item 2"
+        android:icon="@drawable/img_1"
+        app:showAsAction="never" />
+
+</menu>
