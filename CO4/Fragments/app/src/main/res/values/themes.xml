@@ -2,6 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Fragments" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <!-- Primary brand color-->
+        <item name="colorPrimary">#00E2FF</item>
+        <item name="colorPrimaryVariant">#FBC26C</item>
+        <item name="colorOnPrimary">#F8324F</item>
+        <item name="colorOnBackground">#FBC26C</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
