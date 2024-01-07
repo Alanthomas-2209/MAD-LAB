@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ImplicitIntents"
+rootProject.name = "implicitIntents"
 include(":app")
  
