@@ -3,15 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_item1"
-        android:title="Item 1"
+        android:id="@+id/itemHome"
+        android:title="Home"
         android:icon="@drawable/img"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemProfile"
+        android:title="Profile"
+        android:icon="@drawable/img_1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemAbout"
+        android:title="About"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_item2"
-        android:title="Item 2"
-        android:icon="@drawable/img_1"
+        android:id="@+id/itemExit"
+        android:title="Exit"
         app:showAsAction="never" />
 
 </menu>
