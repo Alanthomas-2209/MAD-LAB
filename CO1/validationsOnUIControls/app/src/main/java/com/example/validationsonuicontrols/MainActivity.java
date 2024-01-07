@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
             boolean isValid = true;
 
             String name = nameEditText.getText().toString().trim();
-            if (TextUtils.isEmpty(name)) {
-                nameEditText.setError("Please enter your name");
+            if (TextUtils.isEmpty(name) || !name.matches("[a-zA-Z]+")) {
+                nameEditText.setError("Please enter a valid name");
                 isValid = false;
             }
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             if (TextUtils.isEmpty(email)) {
                 emailEditText.setError("Please enter your email");
                 isValid = false;
-            } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches() || !email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}")) {
                 emailEditText.setError("Please enter a valid email address");
                 isValid = false;
             }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             if (TextUtils.isEmpty(phone)) {
                 phoneEditText.setError("Please enter your phone number");
                 isValid = false;
-            } else if (!Patterns.PHONE.matcher(phone).matches()) {
+            } else if (!Patterns.PHONE.matcher(phone).matches() || !phone.matches("\\d{10}")) {
                 phoneEditText.setError("Please enter a valid phone number");
                 isValid = false;
             }
@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             String password = passwordEditText.getText().toString().trim();
-            if (TextUtils.isEmpty(password)) {
-                passwordEditText.setError("Please enter a password");
+            if (TextUtils.isEmpty(password) || !password.matches("^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[@#$%^&+=]).{6,}$") ) {
+                passwordEditText.setError("Please enter a valid password");
                 isValid = false;
             }
 
