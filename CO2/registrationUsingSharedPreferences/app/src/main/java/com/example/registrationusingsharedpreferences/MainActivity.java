@@ -90,8 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void navigateToNextActivity() {
-        Intent intent = new Intent(MainActivity.this, com.example.registrationusingsharedpreferences.MainActivity2.class);
-        startActivity(intent);
+//        Intent intent = new Intent(MainActivity.this, com.example.registrationusingsharedpreferences.MainActivity2.class);
+        startActivity(new Intent(MainActivity.this, MainActivity2.class));
     }
 
     public static class FormValidator {
