@@ -18,14 +18,16 @@
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:hint="Value 1"></EditText>
+            android:hint="Value 1"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/value2"
             android:layout_width="99dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:hint="value 2"></EditText>
+            android:hint="value 2"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
@@ -35,7 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="30dp"
-        android:hint="Result"></EditText>
+        android:hint="Result"
+        android:minHeight="48dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -74,6 +77,6 @@
             android:onClick="div"
             android:layout_marginLeft="10dp">
         </Button>
-    </LinearLayout>>
+    </LinearLayout>
 
 </LinearLayout>
